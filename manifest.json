@@ -1,0 +1,48 @@
+{
+   "background": {
+      "page": "background.html"
+   },
+   "browser_action": {
+      "default_icon": {
+         "19": "img/browsericons/icon19.png",
+         "38": "img/browsericons/icon38.png"
+      },
+      "default_popup": "ui/index.html",
+      "default_title": "Adblocker Genesis2"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "js": [ "js/vapi-client.js", "js/contentscript.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_start"
+   }, {
+      "all_frames": false,
+      "js": [ "js/scriptlets/subscriber.js" ],
+      "matches": [ "http://*/*", "https://*/*" ],
+      "run_at": "document_idle"
+   } ],
+   "default_locale": "en_US",
+   "description": "__MSG_description__",
+   "homepage_url": "http://anubis.6te.net/",
+   "icons": {
+      "128": "img/icon_128.png",
+      "16": "img/icon_16.png"
+   },
+   "incognito": "split",
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA8lL/XgO5UhDZAD/WJn1caYgmpwU0r2086jC5DmTYsL6iX7t9CBo7tN/YB3xDnltHk0BTYd5Cnw97HGUJa4gr2dCKY9EKglEyVNtnevRsEWABEXm6ZUW4XZXUuS5rJZZU+uwSwZUyUU9DvoTqecCQxtp6WnF9JhnV+W1DXz8dt05OZmS0fawWZCaH0iC7n8rARWqtv8ejMZjQyB+6B06D6atBTbPfwPDr6uAs+2c8Z9QbZEFhtrDy70feiLftICAG0d1xZsUXWGdEF7EiwtupbIeKMw5VhXCflLPpokRrKwQOXF/5YR54T8L4gnuU+JsNgVakozHb3WvEBIoMj4znJQIDAQAB",
+   "manifest_version": 2,
+   "minimum_chrome_version": "26.0",
+   "name": "__MSG_name__",
+   "optional_permissions": [ "file:///*" ],
+   "options_page": "dashboard.html",
+   "options_ui": {
+      "page": "options_ui.html"
+   },
+   "permissions": [ "contextMenus", "privacy", "storage", "tabs", "unlimitedStorage", "webNavigation", "webRequest", "webRequestBlocking", "\u003Call_urls>" ],
+   "short_name": "__MSG_short_name__",
+   "storage": {
+      "managed_schema": "managed_storage.json"
+   },
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "1.0.7"
+}

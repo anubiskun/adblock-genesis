@@ -1,0 +1,209 @@
+@font-face {
+    font-family: 'FontAwesome';
+    font-weight: normal;
+    font-style: normal;
+    src: url('fonts/fontawesome.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Lato';
+	src: url('../ui/css/Lato-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../ui/css/Lato-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('../ui/css/Lato-700.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+.fa {
+    display: inline-block;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    vertical-align: middle;
+}
+body {
+	background: #273b3f;
+	font-family: Lato, "Helvetica Neue", Helvetica;
+}
+
+/* I designed the button with: http://charliepark.org/bootstrap_buttons/ */
+
+button.custom {
+    padding: 0.6em 1em;
+    border: 1px solid transparent;
+    border-color: #ccc #ccc #bbb #bbb;
+    border-radius: 3px;
+    background-color: hsl(216, 0%, 75%);
+    background-image: linear-gradient(#f2f2f2, #dddddd);
+    background-repeat: repeat-x;
+    color: #000;
+    opacity: 0.8;
+}
+button.custom.disabled,
+button.custom[disabled] {
+    border-color: #ddd #ddd hsl(36, 0%, 85%);
+    background-color: hsl(36, 0%, 72%);
+    background-image: linear-gradient(#f2f2f2, #dddddd);
+    color: #666;
+    opacity: 0.6;
+    pointer-events: none;
+}
+button.custom:hover {
+    opacity: 1.0;
+}
+button.important {
+    padding: 0.6em 1em;
+    border: 1px solid transparent;
+    border-color: #688220;
+    border-radius: 3px;
+    background-color: #8EB02C;
+    background-image: linear-gradient(#8EB02C, #688220);
+    background-repeat: repeat-x;
+    color: white;
+    opacity: 0.8;
+}
+button.important:hover {
+    opacity: 1.0;
+}
+.hiddenFileInput {
+    height: 0;
+    visibility: hidden;
+    width: 0;
+}
+
+
+input[type="checkbox"] { display: none; }
+
+input[type="checkbox"] + label {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 20px;
+  vertical-align: middle;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+input[type="checkbox"] + label:before {
+  content: '';
+  display: block;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #8EB02C;
+  position: absolute;
+  left: 0;
+  top: 1px;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+input[type="checkbox"]:checked + label:before {
+  width: 7px;
+  top: -2px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+input, textarea {
+	font-family: Lato;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+{
+    color: transparent;
+}
+
+input, textarea, .whatisthis-expandable {
+    border-radius: 5px;
+    border: solid 1px rgb(31, 51, 51);
+    background-color: rgba(29, 46, 49, 0.37);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: rgba(255, 255, 255, 0.7);
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+a {
+	color: white;
+	text-decoration: none;
+}
+
+a.info.important {
+	color: #8EB02C !important;	
+}
+
+a.info, a.mustread:hover{
+	color: white !important;
+}
+
+.inblock{
+    display: inline-block !important;
+}
+
+#lists > .groupEntry > .geName, #listsOfBlockedHostsPrompt {
+    font-size: 100% !important;
+    font-weight: 700;
+}
+
+#externalListsDiv {
+    margin-top: 0 !important;
+}
+
+#lists > .groupEntry:not(:first-child) > .geName:before, #listsOfBlockedHostsPrompt:before {
+	font-family: FontAwesome;
+    content: '\f056  ' !important;
+}
+
+#lists > .groupEntry.collapsed > .geName:before, body.hideUnused #listsOfBlockedHostsPrompt:before {
+	font-family: FontAwesome;
+    content: '\f055  ' !important;
+}
+
+p[data-i18n="rulesHint"], span[data-i18n="1pFormatHint"], span[data-i18n="whitelistPrompt"] {
+	font-weight: 700;
+    vertical-align: middle;	
+}
+
+li.listEntry span.obsolete {
+    color: hsl(59, 100%, 40%) !important;
+}
+
+.whatisthis{
+  visibility: hidden;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+.whatisthis:after{
+	width: 16px;
+    height: 16px;
+    visibility: visible;
+    font-size: 130%;
+    font-family: FontAwesome;
+    content: "\f059";
+    color: white;
+    padding-left: 5px;
+}

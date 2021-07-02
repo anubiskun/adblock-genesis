@@ -1,0 +1,548 @@
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-300.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-400.ttf') format('truetype');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Lato';
+	src: url('Lato-700.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
+
+body{
+    margin: 0;
+    padding: 3;
+    height: 410px;
+    user-select: none;
+}
+
+.main-ui{
+	font-size: 11px;
+    font-family: 'Lato', sans-serif;
+	position: relative;
+	width: 350px;
+	height: 410px;
+	background-color: #3AA0D9;
+	color: rgba(255, 255, 255, 0.8);
+    letter-spacing: 0.2px;
+    margin: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.4);
+}
+
+.bodyBlur .main-body{
+	-webkit-filter: blur(4px);
+    opacity: 0.2;
+    cursor: default;
+    pointer-events:none;
+}
+
+.top-ui{
+    width: 100%;
+    height: 15px;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+}
+
+.top-ui .title{
+	position: relative;
+    top: 3px;
+    left: 74px;
+    font-size: 21px;
+	text-shadow: 0px 0px 1px rgba(0,0,0,0.7);
+}
+
+.top-ui .title .title1{
+	font-weight: 700;	
+	color: #8EB02C;
+}
+
+.top-ui .title .title2{
+	font-weight: 400;	
+	color: #d8d8d8;
+}
+
+.top-ui .logo{
+	position: absolute;
+    top: 8px;
+    left: 58px;
+    width: 21px;
+}
+
+.logo img{
+	width: 100%;
+	height: 100%;
+}
+
+/*  Copyright (c) Adblock Genesis Plus - All rights reserved. */
+.nonHome #ui-feedback, .nonHome #ui-charts, .nonHome #ui-bottom {
+	left: -360px;
+	transition-duration: 1000ms;		
+}
+
+.nonHome #contactForm {
+	left: 10px;
+	visibility: visible;
+    transition-duration: 1000ms;
+}
+
+#ui-feedback, #ui-charts, #ui-bottom {
+	left: 0;
+	transition-duration: 1000ms
+}
+
+#contactForm {
+    position: absolute;
+    height: 200px;
+    top: 152px;
+	left: 370px;
+	visibility: hidden;
+	height: 270px;
+	transition-duration: 1000ms	
+}
+
+#contactForm .box{
+    position: relative;
+    left: 0; right: 0;
+    margin: auto;
+    border-radius: 5px;
+    border: solid 1px rgb(31, 51, 51);
+    /*background-color: rgba(29, 46, 49, 0.37);*/
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+    outline: none;
+    color: rgba(255, 255, 255, 0.7);
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+#contactForm .settings{
+    width: 200px;
+    padding-left: 70px;
+    height: 58px;
+}
+
+#contactForm .inputbox{
+	top: 50px;
+	height: 25px;
+	width: 330px;
+	font-size: 12px;
+}
+
+#contactForm .textarea{
+    top: 60px;
+    height: 107px;
+    width: 330px;
+    font-size: 12px;
+}
+
+#contactForm img:hover{
+	filter: opacity(1) brightness(110%);
+}
+
+#contactForm img{
+	filter: opacity(1);
+	
+}
+
+#contactForm .card-title{
+	opacity: 0.9;
+	font-size: 12px;
+}
+
+#contactForm .feedback-button{
+	color: #ffffff;
+	opacity: 0.9;
+	font-size: 12px;
+}
+
+#contactForm .report-button{
+	color: #ffffff;
+	opacity: 0.9;
+    font-size: 14px;	
+}
+
+input, textarea {
+	font-family: Lato;
+	color: #ffffff;
+}
+
+input:focus::-webkit-input-placeholder, textarea:focus::-webkit-input-placeholder
+{
+    color: transparent;
+} /*  Copyright (c) Adblock Genesis Plus - All rights reserved. */
+
+#blocked-elements{
+	display: none;
+	position: absolute;
+	left: 318px;
+}
+
+#sitename{
+	font-weight: bold;	
+	text-transform: uppercase;
+}
+
+#closeUI{
+	position: absolute;
+	left: 13px;
+	top: 14px;
+	width: 15px;
+    cursor: pointer;
+}
+
+#closeUI img{
+	filter: opacity(0.5);
+	width: 100%;
+	height: 100%;
+}
+
+#aboutUI{
+	position: absolute;
+	right: 13px;
+	top: 14px;
+	width: 15px;
+    cursor: pointer;
+}
+
+#aboutUI img{
+	filter: opacity(0.5);
+	width: 100%;
+	height: 100%;
+}
+
+.card-ui{
+    width: 340px;
+    position: relative;
+    top: 20px;
+    left: 0px;
+    margin: auto;
+	border-radius: 5px;
+    border: solid 1px rgb(31, 51, 51);
+    background-color: rgba(29, 46, 49, 0.37);
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.card-ui:hover{
+	background-color: rgba(29, 46, 49, 0.30);
+	transition-duration: 400ms;
+}
+
+.card-title{
+	width: 100%;
+	text-align: center;
+	font-weight: 400;
+	top:10px;
+	letter-spacing: 1px;
+	position: absolute;
+	color: rgba(255, 255, 255, 0.9);
+	
+	text-transform: uppercase;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.text-cap{
+	text-transform:capitalize;
+}
+
+.card-sections{
+	display: flex;
+	position: relative;
+}
+
+.card-big-size{
+	height: 120px;
+}
+
+.card-big-size .card-section, .card-big-size .card-separator {
+	height: 80px;
+}
+
+.card-big-size .card-sections {
+	top: 35px;
+}
+
+.card-small-size{
+	height: 40px;
+	top: 40px;
+}
+
+.card-small-size .card-sections, .card-small-size .card-section, .card-small-size .card-separator {
+	height: 20px;
+	line-height: 20px;
+}
+
+.card-small-size .card-sections{
+	top: 25%;
+    font-weight: 400;
+}
+
+.card-section{
+    width: 100px;
+    margin-left: 5px;
+    margin-right: 5px;
+    flex:1;
+    vertical-align: middle;
+    text-align: center;
+    cursor: pointer;
+    border: solid 1px rgba(31, 51, 51, 0);
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 1px rgba(0, 0, 0, 0);
+    transition-duration: 300ms;
+}
+
+#no-popups.on .isOff, #no-popups:not(.on) .isOn{
+	display: none;	
+}
+
+.siteOff #whitelistWebsite .title .isOff, body:not(.siteOff) #whitelistWebsite .title .isOn{
+	display: none;
+}
+
+.siteOff .top-section .card-section:not(#whitelistWebsite) {
+	-webkit-filter: blur(4px);
+    opacity: 0.2;
+    cursor: default;
+    pointer-events:none;
+}
+
+#no-popups.on img{
+	content:url("../images/popups0.png");	
+}
+
+#blockElement.many img{
+	content:url("../images/element0.png");
+}
+
+.siteOff #whitelistWebsite img{
+	content:url("../images/whitelist0.png");
+}
+
+.top-section img, .settings img{
+	height: 45px;
+	filter: opacity(0.5);
+}
+
+.nice{
+	filter: sepia() opacity(0.6) saturate(2000%) hue-rotate(80deg) !important;
+}
+
+.top-section .card-section:hover img, .settings .card-section:hover img, #closeUI:hover img{
+	filter: opacity(0.7);
+}
+
+
+.top-section .title{
+	position: relative;
+    top: 10px;
+}
+
+.settings{
+    position: absolute;
+    bottom: 0px;
+    height: 55px;
+    width: 274px;
+    left: 0;
+    padding-left: 38px;
+}
+
+.settings img{
+	top: -5px;
+	height: 25px;
+}
+
+.settings .title{
+	position: relative;
+    top: 3px;	
+}
+
+.card-charts {
+    width: 340px;
+    position: relative;
+    top: 10px;
+    left: 0px;
+    margin: auto;
+    height: 130px;
+}
+
+.card-charts .card-title{
+	text-align: center;
+	top: 20px;
+}
+
+.card-shares{
+	align-content: center;
+    margin: 0 auto;
+    width: 75px;
+}
+
+.card-share {
+	position: relative;
+	text-align: center;
+	float: left;
+    width: 22px;
+    height: 20px;
+    border: solid 1px rgba(180, 180, 180, 0);
+    border-radius: 3px;
+    box-shadow: 0px 0px 1px 1px rgba(180, 180, 180, 0);
+    cursor: pointer;
+}
+
+.card-share img {
+    position: absolute;
+    left: 0px;
+    right: 0px;
+    bottom: 5px;
+    margin: 0 auto;
+    height: 13px;
+	filter: brightness(120%);    
+	    
+}
+
+.card-share img:hover{
+	filter: brightness(100%);
+}
+
+.card-section:hover{
+	color: rgba(255, 255, 255, 0.95);
+}
+
+.card-separator {
+    width: 1px;
+    background: linear-gradient(rgba(200,200,200,0), rgba(200,200,200,1), rgba(200,200,200,0));
+    top: 30px;
+}
+
+.button-hover{
+	opacity: 0.9;
+}
+
+.button-hover:hover{
+	opacity: 1;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+#report-button{
+	color: #ffffff;
+}
+
+#feedback-button{
+	color: #ffffff;
+}
+
+.chart-title{
+	position: relative;
+	top: -23px;	
+}
+
+.bold{
+	font-weight: 400;
+}
+
+.svg-container{
+	cursor: initial;
+}
+
+.circliful .outer {
+    fill: transparent;
+    stroke: #333;
+    stroke-width: 19.8;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    -moz-transform: rotate(-89deg) translateX(-190px);
+}
+
+.circliful .inner {
+    fill: transparent;
+    stroke: orange;
+    stroke-width: 20;
+    stroke-dasharray: 534;
+    transition: stroke-dashoffset 1s;
+    -webkit-animation-play-state: running;
+    -moz-transform: rotate(-89deg) translateX(-190px);
+    stroke-dashoffset: 0;
+}
+/*  Copyright (c) Adblock Genesis Plus - All rights reserved. */
+.circliful {
+    overflow: visible !important;
+    top: -13px;
+    position: relative;
+}
+
+.circliful circle{
+	transition: stroke-dashoffset 1s linear;
+}
+
+.circliful text{
+	font-weight: bold;
+    text-shadow: 0 0 1px black;
+    text-transform:capitalize;
+}
+
+.svg-container {
+    margin: 0 auto;
+    overflow: visible;
+}
+
+svg .icon {
+    font-family: FontAwesome;
+}
+
+/*Checkboxes styles*/
+.ckbox input[type="checkbox"] { display: none; }
+
+.ckbox input[type="checkbox"] + label, .ckbox input[type="checkbox"] + span {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 20px;
+  font: 14px/20px 'Open Sans', Arial, sans-serif;
+  color: #ddd;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.ckbox input[type="checkbox"] + label:last-child { margin-bottom: 0; }
+
+.ckbox input[type="checkbox"] + label:before, .ckbox input[type="checkbox"] + span:before {
+  content: '';
+  display: block;
+  width: 20px;
+  height: 20px;
+  border: 1px solid #6cc0e5;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: .6;
+  -webkit-transition: all .12s, border-color .08s;
+  transition: all .12s, border-color .08s;
+}
+
+.ckbox input[type="checkbox"]:checked + label:before, .ckbox input[type="checkbox"]:checked + span:before {
+  width: 10px;
+  top: -5px;
+  left: 5px;
+  border-radius: 0;
+  opacity: 1;
+  border-top-color: transparent;
+  border-left-color: transparent;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
