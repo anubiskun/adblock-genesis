@@ -7,7 +7,7 @@
 <br />
 <p align="center">
   <a href="https://github.com/anubiskun/profile">
-    <img src="http://anubis.6te.net/home/images/git/logo.png" alt="Logo" width="500px">
+    <img src="http://anubis.6te.net/home/images/git/logo.png" alt="Logo" width="300px">
   </a>
 
   <h3 align="center">Profile</h3>
