@@ -1,26 +1,32 @@
-
-[![website][web-l]][web-url]
-[![github][github-l]][github-url]
-[![telegram][tg-l]][tg-url]
+<!-- created by anubiskun -->
+# 
+[![website](https://img.shields.io/badge/-website-black.svg?style=for-the-badge&logo=firefoxbrowser&colorB=555)](https://www.anubiskun.xyz)
+[![api rest](https://img.shields.io/badge/-api_rest-black.svg?style=for-the-badge&logo=firefoxbrowser&colorB=555)](https://www.api.anubiskun.xyz)
+[![github](https://img.shields.io/badge/-Github-black.svg?style=for-the-badge&logo=github&colorB=555)](https://github.com/anubiskun)
+[![telegram](https://img.shields.io/badge/-Telegram-black.svg?style=for-the-badge&logo=telegram&colorB=555)](https://t.me/anubiskun)
+[![whatsapp](https://img.shields.io/badge/-Whatsapp-black.svg?style=for-the-badge&logo=whatsapp&colorB=555)](https://wa.me/6289653909054?text=hai,%20anubis)
 ![Profile views](https://gpvc.arturio.dev/anubiskun)
-
 <!-- PROJECT LOGO -->
+
 <br />
 <p align="center">
   <a href="https://github.com/anubiskun/profile">
-    <img src="http://anubis.6te.net/home/images/git/logo.png" alt="Logo" width="200px">
+    <img src="https://github.com/anubiskun.png?size=250" alt="Logo" width="250px">
   </a>
 
   <h3 align="center">Profile</h3>
 
   <p align="center">
-    <a href="http://anubiskun.6te.net"><strong>Explore the docs ?</strong></a>
+    <a href="https://www.anubiskun.xyz/"><strong>Explore the docs ?</strong></a>
     <br />
-    <a href="https://t.me/anubiskun">Report Bug</a>
+    <a href="mailto: anubiskun.xyz@gmail.com">Report Bug</a>
   </p>
 </p>
+<!-- isi content -->
 
-##INSTALATION
+# 
+
+## INSTALATION
 ```
 - clone/download this project
 - extract this project to 
@@ -34,7 +40,7 @@
 - happy browsing/streaming
 ```
 
-###TUTORIAL
+### TUTORIAL
 <table border="0px">
   <tr>
     <th>
